@@ -29,7 +29,7 @@ initContainers:
     imagePullPolicy: {{ .Values.image.pullPolicy }}
     # -- Command used by the Multus installer
     command: ["/install_multus"]
-    arg:
+    args:
     - "--type"
     - "thin"
      volumeMounts:
@@ -65,10 +65,6 @@ persistence:
     hostPath: {{ .Values.cni.paths.bin }}
     hostPathType: Directory
     mountPath: /host/opt/cni/bin
-  multus-cfg
-    enabled: true
-    type: hostPath
-    mountPath: /tmp/multus-conf
 
 serviceAccount:
   # -- create needed service account
