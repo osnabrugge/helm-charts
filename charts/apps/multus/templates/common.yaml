@@ -32,6 +32,8 @@ initContainers:
     args:
       - "--type"
       - "thin"
+    securityContext:
+      privileged: true
     volumeMounts:
     - name: cnibin
       mountPath: /host/opt/cni/bin
