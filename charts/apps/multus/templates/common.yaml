@@ -34,8 +34,8 @@ initContainers:
     - "thin"
      volumeMounts:
      - name: cnibin
-     mountPath: /host/opt/cni/bin
-     mountPropagation: Bidirectional
+       mountPath: /host/opt/cni/bin
+       mountPropagation: Bidirectional
 
 command: ["/thin_entrypoint"]
 # -- Arguments used by the Multus at start up.
