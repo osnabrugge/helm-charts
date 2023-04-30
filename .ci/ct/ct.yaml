@@ -1,0 +1,16 @@
+chart-yaml-schema: .ci/ct/chart_schema.yaml
+lint-conf: .ci/ct/lintconf.yaml
+
+remote: origin
+target-branch: main
+
+helm-extra-args: --timeout 600s
+
+chart-dirs:
+  - charts/apps
+
+chart-repos:
+  - bitnami=https://charts.bitnami.com/bitnami
+  - bjw-s=https://bjw-s.github.io/helm-charts
+  - angelnu=https://angelnu.github.io/helm-charts
+  - jetstack=https://charts.jetstack.io
