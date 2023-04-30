@@ -1,4 +1,0 @@
-excluded-charts-lint: []
-
-excluded-charts-install:
-  - apps/pod-gateway
