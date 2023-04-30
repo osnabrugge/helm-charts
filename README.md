@@ -6,7 +6,7 @@ A collection of Helm charts
 ## Goal
 
 This repo contains Helm charts that I have developed to run applications in my
-[home Kubernetes cluster](https://github.com/osnabrugge/k8s-gitops.git). It is
+[home Kubernetes cluster](https://github.com/osnabrugge/home-ops.git). It is
 based in [bjw-s](https://github.com/bjw-s/helm-charts) work.
 
 This repo is not intended to be a replacement for any of the large collections

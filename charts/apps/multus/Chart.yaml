@@ -12,18 +12,10 @@ icon: https://raw.githubusercontent.com/k8snetworkplumbingwg/multus-cni/master/d
 sources:
   - https://github.com/k8snetworkplumbingwg/multus-cni
 maintainers:
-  - name: sean
+  - name: Sean
     email: sean@seanv.com
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
     version: 1.3.2
 
-annotations:
-  artifacthub.io/changes: |-
-    - kind: changed
-      description: |
-        **BREAKING**: Updated library version to 1.0.1.
-      links:
-        - name: Common library chart definition
-          url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
