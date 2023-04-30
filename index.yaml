@@ -8,13 +8,13 @@ entries:
             Updating to support new installation method for v4
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-04-30T13:37:53.14612389Z"
+    created: "2023-04-30T13:38:56.793621648Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 1.3.2
     description: multus CNI allows multiple NICs per pod
-    digest: cf300360120501cb211655c932ab00228525adfe6db7d226dbd8c7527601d3f5
+    digest: 296bb63c65028c80b8c827a0be1267eb1ef5ae2486abef15970accaecf48362b
     home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/multus
     icon: https://raw.githubusercontent.com/k8snetworkplumbingwg/multus-cni/master/docs/images/Multus.png
     keywords:
@@ -29,4 +29,4 @@ entries:
     urls:
     - https://osnabrugge.github.io/helm-charts/apps/multus-4.0.0.tgz
     version: 4.0.0
-generated: "2023-04-30T13:37:53.143055944Z"
+generated: "2023-04-30T13:38:56.790552599Z"
