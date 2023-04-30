@@ -20,16 +20,15 @@ initContainers:
     # -- Command used by the Multus installer    
     command: ["/install_multus"]
     # -- Arguments used by the Multus installation    
-    args: ["--type"],["thin"]
+    args:
+     - "--type thin"
+    # -- Need to run as privileged to install
     securityContext:
-      privileged: true    
+      privileged: true
     # -- Mounts host CNI binary folder
     volumeMounts:
     - name: cnibin
       mountPath: /host/opt/cni/bin
-    # -- Need to run as privileged to install
-    securityContext:
-      privileged: true
 
 # -- Command used by the Multus at Startup
 command: ["/thin_entrypoint"]
