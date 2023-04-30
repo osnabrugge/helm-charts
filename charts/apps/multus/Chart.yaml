@@ -19,3 +19,8 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.3.2
 
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: |
+        Updating to support new installation method for v4
