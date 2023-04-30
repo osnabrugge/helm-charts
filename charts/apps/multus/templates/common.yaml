@@ -12,8 +12,8 @@ hostNetwork: true
 
 initContainers:
   # -- Init container that installs reference CNI plugins
-  install-multus-binary:
-    name: install-multus-binary
+  cni-installer:
+    name: cni-installer
     # -- CNI installer image
     image: {{ .Values.cni.image.repository }}:{{ .Values.cni.image.tag }}
     imagePullPolicy: {{ .Values.cni.image.pullPolicy }}
