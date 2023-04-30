@@ -13,7 +13,7 @@ edit_uri: ""
 
 # Configuration
 theme:
-  name: material
+  name: mkdocs
   icon:
     repo: fontawesome/brands/github-alt
   language: en
