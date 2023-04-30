@@ -32,6 +32,10 @@ initContainers:
     arg:
     - "--type"
     - "thin"
+     volumeMounts:
+     - name: cnibin
+     mountPath: /host/opt/cni/bin
+     mountPropagation: Bidirectional
 
 command: ["/thin_entrypoint"]
 # -- Arguments used by the Multus at start up.
@@ -61,6 +65,10 @@ persistence:
     hostPath: {{ .Values.cni.paths.bin }}
     hostPathType: Directory
     mountPath: /host/opt/cni/bin
+  multus-cfg
+    enabled: true
+    type: hostPath
+    mountPath: /tmp/multus-conf
 
 serviceAccount:
   # -- create needed service account
