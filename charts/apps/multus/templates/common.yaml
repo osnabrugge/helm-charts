@@ -12,27 +12,29 @@ hostNetwork: true
 
 initContainers:
   # -- Init container that installs reference CNI plugins
-  cni-installer:
-    name: install-multus-binaryr
+  install-multus-binary:
+    name: install-multus-binary
     # -- CNI installer image
     image: {{ .Values.cni.image.repository }}:{{ .Values.cni.image.tag }}
     imagePullPolicy: {{ .Values.cni.image.pullPolicy }}
     # -- Command used by the Multus installer    
-    command:
-    - /install_multus
-    args:
-      - "--type"
-      - "thin"
+    command: ["/install_multus"]
+    # -- Arguments used by the Multus installation    
+    args: ["--type"],["thin"]
+    securityContext:
+      privileged: true    
     # -- Mounts host CNI binary folder
     volumeMounts:
     - name: cnibin
       mountPath: /host/opt/cni/bin
-      
+    # -- Need to run as privileged to install
+    securityContext:
+      privileged: true
+
 # -- Command used by the Multus at Startup
-command:
-- /thin_entrypoint
+command: ["/thin_entrypoint"]
  
-# -- Arguments used by the Multus at start up.
+# -- Arguments used by the Multus at start up
 # See https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/how-to-use.md
 # If you are not using k3s you will need to adjust the multus-kubeconfig.
 args:
@@ -45,7 +47,7 @@ args:
 securityContext:
   privileged: true
 
-# -- Configures volumes used by the multus installer.
+# -- Configures volumes used by the multus installer
 persistence:
   cni:
     enabled: true
