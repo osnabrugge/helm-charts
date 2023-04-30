@@ -8,7 +8,7 @@ entries:
             Updating to support new installation method for v4
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-04-30T14:20:57.3067535Z"
+    created: "2023-04-30T14:28:46.102345789Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -29,4 +29,4 @@ entries:
     urls:
     - https://osnabrugge.github.io/helm-charts/apps/multus-4.0.0.tgz
     version: 4.0.0
-generated: "2023-04-30T14:20:57.303667788Z"
+generated: "2023-04-30T14:28:46.099038334Z"
