@@ -1,0 +1,10 @@
+{
+  extends: [
+    "github>osnabrugge/renovate-config",
+    "github>osnabrugge/renovate-config:automerge-github-actions",
+  ],
+  platform:     "github",
+  username:     "seanv-bot[bot]",
+  gitAuthor:    "seanv-bot[bot] <36992359+seanv-bot[bot]@users.noreply.github.com>",
+  repositories: ["seanv/helm-charts"],
+}

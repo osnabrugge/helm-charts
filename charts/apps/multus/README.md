@@ -10,7 +10,7 @@ multus CNI allows multiple NICs per pod
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| Sean | <sean@seanv.com> |  |
+| sean | <sean@seanv.com> |  |
 
 ## Source Code
 
