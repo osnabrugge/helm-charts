@@ -21,7 +21,7 @@ initContainers:
     command: ["/install_multus"]
     # -- Arguments used by the Multus installation
     args:
-     - "--type thin"
+    - "--type thin"
     # -- Need to run as privileged to install
     securityContext:
       privileged: true
