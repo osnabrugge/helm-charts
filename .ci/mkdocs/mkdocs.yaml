@@ -1,9 +1,9 @@
 ---
 
 # Project information
-site_name: osnabrugge | Helm charts | Docs
-site_description: Docs for the osnabrugge Helm charts repository
-site_author: osnabrugge
+site_name: seanv | Helm charts | Docs
+site_description: Docs for the seanv Helm charts repository
+site_author: seanv
 site_url: https://osnabrugge.github.io/helm-charts/docs
 
 # Repository
@@ -13,7 +13,7 @@ edit_uri: ""
 
 # Configuration
 theme:
-  name: mkdocs
+  name: material
   icon:
     repo: fontawesome/brands/github-alt
   language: en
@@ -56,6 +56,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/osnabrugge
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/k8s-at-home
 
 # Extensions
 markdown_extensions:

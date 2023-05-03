@@ -73,7 +73,7 @@ jobs:
         shell: bash
         working-directory: dest
         run: |
-          helm repo index . --url https://github.com/osnabrugge/helm-charts
+          helm repo index . --url https://osnabrugge.github.io/helm-charts/
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -81,9 +81,9 @@ jobs:
         with:
           repository: dest
           branch: gh-pages
-          commit_user_name: "container-bot[bot]"
-          commit_user_email: 36992359+seanv-bot[bot]@users.noreply.github.com
-          commit_author: container-bot[bot] <36992359+container-bot[bot]@users.noreply.github.com>
+          commit_user_name: "seanv-bot[bot]"
+          commit_user_email: 36882695+seanv-bot[bot]@users.noreply.github.com
+          commit_author: seanv-bot[bot] <36882695+seanv-bot[bot]@users.noreply.github.com>
           file_pattern: 'index.yaml **/*.tgz'
           disable_globbing: true
 

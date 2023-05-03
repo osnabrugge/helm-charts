@@ -21,20 +21,12 @@ initContainers:
     volumeMounts:
     - name: cnibin
       mountPath: /host/opt/cni/bin
-  # -- Init container that installs the multus CNI binary
-  install-multus-binary:
-    name: install-multus-binary
-    # -- Multus installer image
-    image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-    imagePullPolicy: {{ .Values.image.pullPolicy }}
-    # -- Command used by the Multus installer
-    command: ["/install_multus"]
-    arg:
-    - "--type"
-    - "thin"
 
-command: ["/thin_entrypoint"]
-# -- Arguments used by the Multus at start up.
+# -- Command used by the Multus installer
+command:
+- /entrypoint.sh
+
+# -- Arguments used by the Multus installer.
 # See https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/how-to-use.md
 # If you are not using k3s you will need to adjust the multus-kubeconfig.
 args:

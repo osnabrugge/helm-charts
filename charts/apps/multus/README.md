@@ -1,6 +1,6 @@
 # multus
 
-![Version: 4.0.0](https://img.shields.io/badge/Version-4.0.0-informational?style=flat-square) ![AppVersion: v4.0.1](https://img.shields.io/badge/AppVersion-v4.0.1-informational?style=flat-square)
+![Version: 4.0.0](https://img.shields.io/badge/Version-4.0.0-informational?style=flat-square) ![AppVersion: v3.7.1](https://img.shields.io/badge/AppVersion-v3.7.1-informational?style=flat-square)
 
 multus CNI allows multiple NICs per pod
 
@@ -10,7 +10,7 @@ multus CNI allows multiple NICs per pod
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| sean | <sean@seanv.com> |  |
+| angelnu | <git@angelnu.com> |  |
 
 ## Source Code
 
@@ -36,6 +36,6 @@ Kubernetes: `>=1.16.0-0`
 | cni.version | string | `"0.3.1"` | CNI interface version |
 | image.pullPolicy | string | `"IfNotPresent"` | multus installer pull policy |
 | image.repository | string | `"ghcr.io/k8snetworkplumbingwg/multus-cni"` | multus installer repostory |
-| image.tag | string | `"v4.0.1"` | multus installer tag |
+| image.tag | string | `"v3.9.2"` | multus installer tag |
 
 ----------------------------------------------
