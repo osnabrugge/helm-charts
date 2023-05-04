@@ -49,9 +49,8 @@ command:
 # See https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/how-to-use.md
 # CNI providers for k3s are folowing these locations, but adjust if required.
 args:
-  - "--multus-conf-file=auto-"
+  - "--multus-conf-file=auto"
   - "--cleanup-config-on-exit=true"
-  - "--multus-autoconfig-dir=/host/etc/cni/net.d"
   - "--cni-version={{ .Values.cni.version }}"
   - "--multus-kubeconfig-file-host={{ .Values.cni.paths.config }}/multus.d/multus.kubeconfig"
 
