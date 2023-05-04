@@ -24,11 +24,11 @@ cni:
 
   paths:
     # -- CNI config folder
-    # Older versions of CNI for k3s may need this changed
+    # may be in a different logation for legacy versions
     config: /etc/cni/net.d
 
     # -- CNI plugin binaries folder
-    # Older versions of CNI for k3s may need this changed
+    # may be in a different logation for legacy versions
     bin: /opt/cni/bin
 
   # -- CNI interface version
