@@ -23,13 +23,13 @@ cni:
     pullPolicy: IfNotPresent
 
   paths:
-    # -- CNI config folder for k3s.
-    # Change to `/etc/cni/net.d` for non k3s
-    config: /var/lib/rancher/k3s/agent/etc/cni/net.d
+    # -- CNI config folder
+    # Older versions of CNI for k3s may need this changed
+    config: /etc/cni/net.d
 
-    # -- CNI plugin binaries folder for k3s.
-    # Change to `/opt/cni/bin` for non k3s
-    bin: /var/lib/rancher/k3s/data/current/bin
+    # -- CNI plugin binaries folder
+    # Older versions of CNI for k3s may need this changed
+    bin: /opt/cni/bin
 
   # -- CNI interface version
   version: "0.3.1"

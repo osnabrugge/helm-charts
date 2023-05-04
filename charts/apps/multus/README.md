@@ -1,6 +1,6 @@
 # multus
 
-![Version: 4.0.0](https://img.shields.io/badge/Version-4.0.0-informational?style=flat-square) ![AppVersion: v4.0.1](https://img.shields.io/badge/AppVersion-v4.0.1-informational?style=flat-square)
+![Version: 4.0.1](https://img.shields.io/badge/Version-4.0.1-informational?style=flat-square) ![AppVersion: v4.0.1](https://img.shields.io/badge/AppVersion-v4.0.1-informational?style=flat-square)
 
 multus CNI allows multiple NICs per pod
 
@@ -31,8 +31,8 @@ Kubernetes: `>=1.16.0-0`
 | cni.image.pullPolicy | string | `"IfNotPresent"` | CNI installer pull policy |
 | cni.image.repository | string | `"ghcr.io/osnabrugge/cni-plugins"` | CNI installer repostory |
 | cni.image.tag | string | `"v1.2.0"` | CNI installer tag |
-| cni.paths.bin | string | `"/var/lib/rancher/k3s/data/current/bin"` | CNI plugin binaries folder for k3s. Change to `/opt/cni/bin` for non k3s |
-| cni.paths.config | string | `"/var/lib/rancher/k3s/agent/etc/cni/net.d"` | CNI config folder for k3s. Change to `/etc/cni/net.d` for non k3s |
+| cni.paths.bin | string | `"/opt/cni/bin"` | CNI plugin binaries folder Older versions of CNI for k3s may need this changed |
+| cni.paths.config | string | `"/etc/cni/net.d"` | CNI config folder Older versions of CNI for k3s may need this changed |
 | cni.version | string | `"0.3.1"` | CNI interface version |
 | image.pullPolicy | string | `"IfNotPresent"` | multus installer pull policy |
 | image.repository | string | `"ghcr.io/k8snetworkplumbingwg/multus-cni"` | multus installer repostory |
