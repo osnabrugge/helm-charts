@@ -1,0 +1,41 @@
+
+---
+{{- include "bjw-s.common.loader.init" . }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
+  labels:
+    {{- include "bjw-s.common.lib.metadata.allLabels" . | nindent 4 }}
+data:
+  cni-conf.json: |
+    {
+      "name": "multus-cni-network",
+      "type": "multus",
+      "capabilities": {
+        "portMappings": true
+      },
+      "delegates": [
+        {
+          "cniVersion": "{{ .Values.cni.version }}",
+          "name": "default-cni-network",
+          "plugins": [
+            {
+              "type": "flannel",
+              "name": "flannel.1",
+                "delegate": {
+                  "isDefaultGateway": true,
+                  "hairpinMode": true
+                }
+              },
+              {
+                "type": "portmap",
+                "capabilities": {
+                  "portMappings": true
+                }
+              }
+          ]
+        }
+      ],
+      "kubeconfig": "/etc/cni/net.d/multus.d/multus.kubeconfig"
+    }
