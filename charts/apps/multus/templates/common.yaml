@@ -22,9 +22,28 @@ initContainers:
     - name: cnibin
       mountPath: /host/opt/cni/bin
 
+  # -- Init container that installs Multus
+  install-multus-binary:
+    name: install-multus-binary
+    # -- CNI installer image
+    image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+    imagePullPolicy: {{ .Values.image.pullPolicy }}
+    command: ["/install_multus"]
+    args:
+      - "--type"
+      - "thin"
+    # -- Need to run as privileged to install
+    securityContext:
+      privileged: true
+    # -- Mounts host Multus binary folder
+    volumeMounts:
+    - name: cnibin
+      mountPath: /host/opt/cni/bin
+      mountPropagation: Bidirectional
+
 # -- Command used by the Multus installer
 command:
-- /entrypoint.sh
+- /thin_entrypoint
 
 # -- Arguments used by the Multus installer.
 # See https://github.com/k8snetworkplumbingwg/multus-cni/blob/master/docs/how-to-use.md

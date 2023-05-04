@@ -12,5 +12,6 @@ chart-dirs:
 chart-repos:
   - bitnami=https://charts.bitnami.com/bitnami
   - bjw-s=https://bjw-s.github.io/helm-charts
+  - angelnu=https://angelnu.github.io/helm-charts
   - osnabrugge=https://osnabrugge.github.io/helm-charts
   - jetstack=https://charts.jetstack.io

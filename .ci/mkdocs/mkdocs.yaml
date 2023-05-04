@@ -13,7 +13,7 @@ edit_uri: ""
 
 # Configuration
 theme:
-  name: material
+  name: mkdocs
   icon:
     repo: fontawesome/brands/github-alt
   language: en
@@ -30,13 +30,13 @@ theme:
       primary: blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: mkdocs/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
       primary: blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch
+        icon: mkdocs/toggle-switch
         name: Switch to light mode
   font:
     text: Roboto
@@ -78,9 +78,3 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Common Library:
-      - Introduction: common-library/introduction.md
-      - Common Storage: common-library/common-library-storage.md
-      - Common Add-ons: common-library/common-library-add-ons.md
-  - App Template:
-      - Introduction: app-template/introduction.md

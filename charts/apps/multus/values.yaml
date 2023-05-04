@@ -9,16 +9,16 @@ image:
   # -- multus installer repostory
   repository: ghcr.io/k8snetworkplumbingwg/multus-cni
   # -- multus installer tag
-  tag: v3.9.2
+  tag: v4.0.1
   # -- multus installer pull policy
   pullPolicy: IfNotPresent
 
 cni:
   image:
     # -- CNI installer repostory
-    repository: ghcr.io/k8s-at-home/cni-plugins
+    repository: ghcr.io/osnabrugge/cni-plugins
     # -- CNI installer tag
-    tag: v1.1.1
+    tag: v1.2.0
     # -- CNI installer pull policy
     pullPolicy: IfNotPresent
 

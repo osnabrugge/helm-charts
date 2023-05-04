@@ -14,13 +14,13 @@ tasks:
   lint:
     desc: Run ct-lint on charts
     cmds:
-      - docker run --rm -it --workdir=/data --volume $(pwd):/data {{.CT_IMAGE}} ct lint --config {{.CT_CONFIG_FILE}} --excluded-charts "{{.CHARTS_EXCLUDED_FROM_LINT}}"
+      - docker run --rm -it --workdir=/data --volume $(pwd):/data {{.CT_IMAGE}} /bin/sh -c "git config --global --add safe.directory /data; ct lint --config {{.CT_CONFIG_FILE}}" --excluded-charts "{{.CHARTS_EXCLUDED_FROM_LINT}}"
     silent: true
 
   lint-all:
     desc: Run ct-lint on all charts
     cmds:
-      - docker run --rm -it --workdir=/data --volume $(pwd):/data {{.CT_IMAGE}} ct lint --config {{.CT_CONFIG_FILE}} --all --excluded-charts "{{.CHARTS_EXCLUDED_FROM_LINT}}"
+      - docker run --rm -it --workdir=/data --volume $(pwd):/data {{.CT_IMAGE}} /bin/sh -c "git config --global --add safe.directory /data; ct lint --config {{.CT_CONFIG_FILE}} --all" --excluded-charts "{{.CHARTS_EXCLUDED_FROM_LINT}}"
     silent: true
 
   dependency-cleanup:

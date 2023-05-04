@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the documentation for the [seanv Helm charts](https://github.com/osnabrugge/helm-charts) project.
+Welcome to the documentation for the [osnabrugge Helm charts](https://github.com/osnabrugge/helm-charts) project.
 
 ## Getting started
 
@@ -11,10 +11,10 @@ Refer to Helm's [documentation](https://helm.sh/docs/) to get started.
 ## Installation
 
 ```sh
-helm repo add seanv http://osnabrugge.github.io/helm-charts/
+helm repo add osnabrugge http://osnabrugge.github.io/helm-charts/
 ```
 
-You can then run `helm search repo seanv` to search the charts.
+You can then run `helm search repo osnabrugge` to search the charts.
 
 ## Other usefull charts
 
@@ -25,7 +25,7 @@ You can then run `helm search repo seanv` to search the charts.
 
 ### Discord
 
-Join the k8s-at-home [Discord](https://discord.gg/k8s-at-home) community on Discord.
+Join the k8s-at-home [Discord](https://discord.gg/sTMX7Vh) community on Discord.
 
 ### Repository topics
 
