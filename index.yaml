@@ -5,13 +5,44 @@ entries:
       artifacthub.io/changes: |-
         - kind: changed
           description: |
+            **BREAKING**: Updated multus version to 4.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    appVersion: v4.0.1
+    created: "2023-05-10T09:11:25.836323625Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: multus CNI allows multiple NICs per pod
+    digest: 866eae21660d3f9c2ad978a06ee5a7b9f420fa3fc0ae143ac6b2ff26fcd7213b
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/multus
+    icon: https://raw.githubusercontent.com/k8snetworkplumbingwg/multus-cni/master/docs/images/Multus.png
+    keywords:
+    - multus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: git@angelnu.com
+      name: angelnu
+    name: multus
+    sources:
+    - https://github.com/k8snetworkplumbingwg/multus-cni
+    urls:
+    - https://osnabrugge.github.io/helm-charts/apps/multus-5.0.0.tgz
+    version: 5.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
             **BREAKING**: Updated library version to 1.0.1.
           links:
             - name: Common library chart definition
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.668904055Z"
+    created: "2023-05-10T09:11:25.833511619Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -42,7 +73,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.666008289Z"
+    created: "2023-05-10T09:11:25.829234759Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -73,7 +104,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.663008821Z"
+    created: "2023-05-10T09:11:25.826481856Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -104,7 +135,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.640850221Z"
+    created: "2023-05-10T09:11:25.823738954Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -135,7 +166,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.637841453Z"
+    created: "2023-05-10T09:11:25.820908048Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -166,7 +197,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-10T09:10:21.634944687Z"
+    created: "2023-05-10T09:11:25.817200009Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -187,4 +218,4 @@ entries:
     urls:
     - https://osnabrugge.github.io/helm-charts/apps/multus-4.0.0.tgz
     version: 4.0.0
-generated: "2023-05-10T09:10:21.6310949Z"
+generated: "2023-05-10T09:11:25.813915286Z"
