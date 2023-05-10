@@ -40,7 +40,7 @@ initContainers:
   # -- Init container that installs reference CNI plugins
   multus-installer:
     name: multus-installer
-    image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+    image: {{ .Values.image.repository }}:{{ .Values.image.tag }}-thick
     imagePullPolicy: {{ .Values.image.pullPolicy }}
     command:
       - "cp"

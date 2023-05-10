@@ -37,6 +37,6 @@ Kubernetes: `>=1.16.0-0`
 | hostPID | bool | `true` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | multus installer pull policy |
 | image.repository | string | `"ghcr.io/k8snetworkplumbingwg/multus-cni"` | multus installer repostory |
-| image.tag | string | `"{{ .Chart.AppVersion }}-thick"` | multus installer tag |
+| image.tag | string | `"v4.0.1"` | multus installer tag |
 
 ----------------------------------------------

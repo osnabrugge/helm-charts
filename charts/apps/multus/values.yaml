@@ -9,7 +9,7 @@ image:
   # -- multus installer repostory
   repository: ghcr.io/k8snetworkplumbingwg/multus-cni
   # -- multus installer tag
-  tag: "{{ .Chart.AppVersion }}-thick"
+  tag: v4.0.1
   # -- multus installer pull policy
   pullPolicy: IfNotPresent
 
