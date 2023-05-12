@@ -1,10 +1,35 @@
 {
   "extends": [
-    "github>osnabrugge/renovate-config",
-    "github>osnabrugge/renovate-config:automerge-github-actions"
+    "config:base",
+    "docker:enableMajor",
+    ":disableRateLimiting",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":automergeDigest"
   ],
-  "platform":     "github",
-  "username":     "seanv-bot[bot]",
-  "gitAuthor":    "seanv-bot[bot] <36882695+seanv-bot[bot]@users.noreply.github.com>",
-  "repositories": ["osnabrugge/helm-charts"]
+  "platform": "github",
+  "username": "seanv-bot[bot]",
+  "repositories": ["osnabrugge/helm-charts"],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "gitAuthor": "seanv-bot[bot] <36882695+seanv-bot[bot]@users.noreply.github.com>",
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "commitBodyTable": true,
+  "packageRules": [
+    {
+      "description": "Auto-merge Github Actions",
+      "matchDatasources": ["github-tags"],
+      "automerge": true,
+      "automergeType": "branch",
+      "ignoreTests": true,
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackagePatterns": ["renovatebot/github-action"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["digest"],
+      "commitMessagePrefix": "📣 "
+    }
+  ]
 }
