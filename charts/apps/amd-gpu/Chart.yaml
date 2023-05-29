@@ -1,3 +1,4 @@
+---
 apiVersion: v2
 name: amd-gpu
 description: A Helm chart for deploying Kubernetes AMD GPU device plugin

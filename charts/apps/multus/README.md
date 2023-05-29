@@ -1,6 +1,6 @@
 # multus
 
-![Version: 5.0.0](https://img.shields.io/badge/Version-5.0.0-informational?style=flat-square) ![AppVersion: v4.0.1](https://img.shields.io/badge/AppVersion-v4.0.1-informational?style=flat-square)
+![Version: 4.0.0](https://img.shields.io/badge/Version-4.0.0-informational?style=flat-square) ![AppVersion: v4.0.1](https://img.shields.io/badge/AppVersion-v4.0.1-informational?style=flat-square)
 
 multus CNI allows multiple NICs per pod
 
@@ -10,7 +10,7 @@ multus CNI allows multiple NICs per pod
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| angelnu | <git@angelnu.com> |  |
+| Sean | <sean@seanv.com> |  |
 
 ## Source Code
 
@@ -22,7 +22,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 1.5.0 |
+| https://bjw-s.github.io/helm-charts | common | 1.3.2 |
 
 ## Values
 
