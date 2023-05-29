@@ -3,7 +3,7 @@ entries:
   amd-gpu:
   - apiVersion: v2
     appVersion: 1.25.2.3
-    created: "2023-05-29T13:25:11.214908615Z"
+    created: "2023-05-29T13:26:29.865905126Z"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -39,7 +39,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.248481029Z"
+    created: "2023-05-29T13:26:29.890776785Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -70,7 +70,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.245693195Z"
+    created: "2023-05-29T13:26:29.886388622Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -101,7 +101,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.242932361Z"
+    created: "2023-05-29T13:26:29.883419079Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -132,7 +132,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.240121026Z"
+    created: "2023-05-29T13:26:29.879962429Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -163,7 +163,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.229366494Z"
+    created: "2023-05-29T13:26:29.875081359Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -194,7 +194,7 @@ entries:
               url: https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.226594359Z"
+    created: "2023-05-29T13:26:29.872330919Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
@@ -222,13 +222,13 @@ entries:
             Updating to support new installation method for v4
     apiVersion: v2
     appVersion: v4.0.1
-    created: "2023-05-29T13:25:11.223762325Z"
+    created: "2023-05-29T13:26:29.869510878Z"
     dependencies:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
-      version: 1.3.2
+      version: 1.5.0
     description: multus CNI allows multiple NICs per pod
-    digest: 759ee1f7ab6ace27fc61248a09c9640f8d7b21e66f3bb0163e86ef0f5c6f7a3b
+    digest: 2822fee097ed97b8e596226fc90d12ce3ac89a91bb227507c6979add5e7ba7bc
     home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/multus
     icon: https://raw.githubusercontent.com/k8snetworkplumbingwg/multus-cni/master/docs/images/Multus.png
     keywords:
@@ -243,4 +243,4 @@ entries:
     urls:
     - https://osnabrugge.github.io/helm-charts/apps/multus-4.0.0.tgz
     version: 4.0.0
-generated: "2023-05-29T13:25:11.212275583Z"
+generated: "2023-05-29T13:26:29.862632379Z"
